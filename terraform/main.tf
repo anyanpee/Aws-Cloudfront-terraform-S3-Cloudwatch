@@ -135,7 +135,7 @@ resource "aws_s3_object" "website_assets" {
   for_each     = local.static_files
   bucket       = aws_s3_bucket.site_bucket.id
   key          = each.key
-  source       = "./${each.key}"
+  source       = "../web/${each.key}"
   content_type = each.value
-  etag         = filemd5("./${each.key}")
+  etag         = filemd5("../web/${each.key}")
 }

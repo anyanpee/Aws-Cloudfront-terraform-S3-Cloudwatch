@@ -36,6 +36,7 @@ This project demonstrates how to set up a high-performance static website using 
 
 ### 2. Initialize Terraform
 ```bash
+cd terraform
 terraform init
 ```
 ![Terraform Init](screenshots/terraform-init-Screenshot%202025-09-06%20023919.png)
@@ -79,16 +80,19 @@ terraform apply
 
 ```
 cloud front/
-├── main.tf                 # Main CloudFront and S3 configuration
-├── waf.tf                  # WAF security rules
-├── security-headers.tf     # Security headers policy
-├── cloudwatch.tf          # Monitoring and dashboard
-├── provider.tf             # AWS provider configuration
-├── variable.tf             # Input variables
-├── output.tf               # Output values
-├── index.html              # Main webpage
-├── styles.css              # Styling
-├── script.js               # JavaScript functionality
+├── terraform/              # Terraform infrastructure code
+│   ├── main.tf             # Main CloudFront and S3 configuration
+│   ├── waf.tf              # WAF security rules
+│   ├── security-headers.tf # Security headers policy
+│   ├── cloudwatch.tf       # Monitoring and dashboard
+│   ├── provider.tf         # AWS provider configuration
+│   ├── variable.tf         # Input variables
+│   └── output.tf           # Output values
+├── web/                    # Web application files
+│   ├── index.html          # Main webpage
+│   ├── styles.css          # Styling
+│   └── script.js           # JavaScript functionality
+├── screenshots/            # Project screenshots
 └── README.md               # This file
 ```
 
