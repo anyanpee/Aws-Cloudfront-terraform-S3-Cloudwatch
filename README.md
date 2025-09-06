@@ -29,28 +29,25 @@ This project demonstrates how to set up a high-performance static website using 
 ## 🛠️ Setup Process
 
 ### 1. VS Code Setup
-![](<vs.code.setup-Screenshot 2025-09-06 023702.png>)
+![VS Code Setup](screenshots/vs.code.setup-Screenshot%202025-09-06%20023702.png)
 
 ### 2. Initialize Terraform
 ```bash
 terraform init
 ```
-![Terraform Init]
-![](<terraform-init-Screenshot 2025-09-06 023919.png>)
+![Terraform Init](screenshots/terraform-init-Screenshot%202025-09-06%20023919.png)
 
 ### 3. Plan Infrastructure
 ```bash
 terraform plan
 ```
-![Terraform Plan]
-![](<teerraform-plan-Screenshot 2025-09-06 024407.png>)
+![Terraform Plan](screenshots/teerraform-plan-Screenshot%202025-09-06%20024407.png)
 
 ### 4. Import Existing S3 Bucket (if needed)
 ```bash
 terraform import aws_s3_bucket.site_bucket bucket-name
 ```
-![Terraform Import]
-![](<terraform-import-Screenshot 2025-09-06 024742.png>)
+![Terraform Import](screenshots/terraform-import-Screenshot%202025-09-06%20024742.png)
 
 ### 5. Deploy Infrastructure
 ```bash
@@ -60,23 +57,19 @@ terraform apply
 ## 📸 AWS Console Verification
 
 ### S3 Bucket Configuration
-![S3 Bucket]
-![](<S3-BUCKET-Screenshot 2025-09-06 032454.png>)
+![S3 Bucket](screenshots/S3-BUCKET-Screenshot%202025-09-06%20032454.png)
 
 ### CloudFront Distribution
-![CloudFront Console]
-![](<cloudfront-on-aws-console-Screenshot 2025-09-06 031802.png>)
+![CloudFront Console](screenshots/cloudfront-on-aws-console-Screenshot%202025-09-06%20031802.png)
 
 ### WAF Configuration
-![WAF Setup]
-![](<cloudfront-Waf-Screenshot 2025-09-06 032306.png>)
+![WAF Setup](screenshots/cloudfront-Waf-Screenshot%202025-09-06%20032306.png)
 
 
 ## 🌐 Final Result
 
 ### Live Application
-![CloudFront Application]
-![](<cloudfront-frontpage-main-Screenshot 2025-09-06 031443.png>)
+![CloudFront Application](screenshots/cloudfront-frontpage-main-Screenshot%202025-09-06%20031443.png)
 
 
 ## 📁 Project Structure
