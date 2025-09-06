@@ -10,6 +10,9 @@ This project demonstrates how to set up a high-performance static website using 
 - **WAF**: Web Application Firewall for security protection
 - **Terraform**: Infrastructure as Code for automated deployment
 
+## Architecture Diagram
+![](<diagrame f0r clondfront Screenshot 2025-09-06 051004.png>)
+
 ## 🚀 Features
 
 - ✅ Global edge caching with CloudFront
